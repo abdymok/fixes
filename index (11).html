@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<link rel="icon" type="image/png" href="https://abdymok.github.io/40/evidence/monowheelers.png">
+<link rel="apple-touch-icon" href="https://abdymok.github.io/40/evidence/monowheelers.png">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>abdymok</title>
+<meta name="description" content="ultra-competitive ukraine-style politics">
+<meta property="og:type" content="website">
+<meta property="og:title" content="abdymok">
+<meta property="og:description" content="ultra-competitive ukraine-style politics">
+<meta property="og:url" content="https://abdymok.github.io/">
+<meta property="og:image" content="https://abdymok.github.io/40/evidence/monowheelers.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="abdymok">
+<meta name="twitter:description" content="ultra-competitive ukraine-style politics">
+<meta name="twitter:image" content="https://abdymok.github.io/40/evidence/monowheelers.png">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#ffffff">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-S3ZLJ9QQWD"></script>
+<script>
+window.dataLayer=window.dataLayer||[];
+function gtag(){dataLayer.push(arguments)}
+gtag('js',new Date());
+gtag('config','G-S3ZLJ9QQWD');
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#fff}
+body{background:#fff;color:#111;font-family:Spectral,Georgia,"Times New Roman",serif;font-weight:400}
+main{width:100%;height:100dvh;display:flex;flex-direction:column}
+.top{padding:5vh 5vw 2.5vh;font-size:15px;line-height:1.45}
+.topline{display:block}
+.top a{color:inherit;text-decoration:none}
+.top a:hover{opacity:.62}
+.marks{display:flex;align-items:center;gap:14px;height:32px}
+.marks a{display:flex;align-items:center;justify-content:center;height:32px}
+.marks a.home{font-size:13px;line-height:1;letter-spacing:.01em}
+.marks img{display:block;width:auto;height:32px;max-width:48px}
+.marks img.infrastructure{width:72px;max-width:72px;height:auto}
+.credit{margin-top:20px;font-size:11.5px}
+.credit .y{color:#b00000}
+.film{flex:1;min-height:0;width:100%;display:flex;align-items:flex-end;justify-content:center;background:#fff;overflow:hidden}
+video{display:block;width:100%;height:auto;max-height:100%;object-fit:contain;object-position:center bottom;background:#fff;cursor:pointer;filter:none;border:0;outline:0}
+@media(max-width:700px){
+html,body{background:#fff;color:#111}
+.film,video{background:#fff}
+.top{padding:4vh 20px 2.5vh;font-size:14px}
+.topline{display:block}
+.marks{height:28px;gap:12px}
+.marks a{height:28px}
+.marks img{height:28px;max-width:42px}
+.marks img.infrastructure{width:62px;max-width:62px}
+.credit{margin-top:18px;font-size:11px}
+}
+@media(max-width:700px) and (orientation:portrait){
+main{position:relative;display:block;width:100%;height:100dvh}
+.top{position:relative;z-index:2}
+.film{position:fixed;inset:0;width:100%;height:100dvh;margin:0;padding:0;display:block;overflow:hidden;background:#fff;z-index:1}
+video{position:absolute;left:50%;bottom:0;display:block;width:auto;height:100%;max-width:none;max-height:none;margin:0;padding:0;object-fit:contain;object-position:center bottom;transform:translateX(-50%);border:0;outline:0}
+}
+@media(max-width:1000px) and (orientation:landscape){
+html,body{background:#fff;color:#111}
+.film,video{background:#fff}
+main{position:relative;display:block;width:100%;height:100dvh}
+.top{position:relative;z-index:2;padding:2vh 20px 0}
+.film{position:fixed;inset:0;width:100%;height:100dvh;margin:0;padding:0;display:block;overflow:hidden;background:#fff;z-index:1}
+video{position:absolute;inset:0;display:block;width:100%;height:100%;max-width:none;max-height:none;margin:0;padding:0;object-fit:fill;object-position:center center;transform:none;border:0;outline:0}
+}
+</style>
+</head>
+<body>
+<main>
+<div class="top">
+<nav class="marks" aria-label="Archive">
+<a class="home" href="https://abdymok.github.io/" title="Home"><img src="https://abdymok.github.io/40/articles/home.svg" alt="home"></a>
+<a href="https://abdymok.github.io/40/" title="40"><img src="mural.svg" alt="40"></a>
+<a href="https://abdymok.github.io/40/articles/critical-infrastructure-damage.html" title="infrastructure"><img class="infrastructure" src="infrastructure.svg" alt="infrastructure"></a>
+<a href="https://abdymok.github.io/40/articles/data-center-damage.html" title="data center"><img src="data-center.svg" alt="data center"></a>
+</nav>
+<div class="credit"><a href="https://abdymok.substack.com/" title="abdymok"><em>powered by abd<span class="y">y</span>mok</em></a></div>
+</div>
+<div class="film"><video autoplay muted playsinline preload="auto" poster="unicyclers-poster.jpg" webkit-playsinline aria-label="Black and white video of two unicyclers beside the Dnipro in Kyiv"><source src="unicyclers-fullbleed.mp4" type="video/mp4"></video></div>
+</main>
+<script>
+const film=document.querySelector('video');
+film.muted=true;
+film.playsInline=true;
+film.loop=true;
+// Diagnostics: shown only at /?debug, otherwise inert.
+const out=/[?&]debug\b/.test(location.search)?document.body.appendChild(document.createElement('pre')):null;
+if(out)out.style.cssText='position:fixed;left:6px;bottom:6px;z-index:9;margin:0;padding:4px;max-width:96vw;font:11px/1.3 monospace;white-space:pre-wrap;background:#fff;color:#000';
+function note(tag,err){
+  if(!out)return;
+  out.textContent+=Math.round(performance.now())+'ms '+tag+' '+(err?err.name:'ok')+' rs'+film.readyState+' ns'+film.networkState+' paused'+(film.paused?1:0)+' t'+film.currentTime.toFixed(1)+' '+film.videoWidth+'x'+film.videoHeight+(film.error?' err'+film.error.code:'')+'\n';
+}
+function tryPlay(ev){
+  const tag=ev&&ev.type?ev.type+(ev.persisted?'(bfcache)':''):'call';
+  const result=film.play();
+  if(result&&typeof result.then==='function')result.then(()=>note(tag),err=>note(tag,err));
+}
+film.addEventListener('loadedmetadata',tryPlay);
+film.addEventListener('loadeddata',tryPlay);
+film.addEventListener('canplay',tryPlay);
+film.addEventListener('playing',()=>note('playing'));
+if(out)['suspend','error'].forEach(n=>film.addEventListener(n,()=>note(n)));
+film.addEventListener('click',e=>film.paused?tryPlay(e):film.pause());
+window.addEventListener('pageshow',tryPlay);
+document.addEventListener('visibilitychange',()=>{if(!document.hidden)tryPlay();});
+tryPlay();
+</script>
+<script>if("serviceWorker" in navigator){window.addEventListener("load",()=>navigator.serviceWorker.register("sw.js",{updateViaCache:"none"}).then(r=>r.update()).catch(()=>{}))}</script>
+</body>
+</html>
